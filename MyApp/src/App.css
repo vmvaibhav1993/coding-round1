@@ -1,0 +1,14 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #282c34;
+  padding: 20px;
+}
+
+.App h1 {
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  color: white;
+}

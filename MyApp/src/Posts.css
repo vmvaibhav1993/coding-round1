@@ -1,0 +1,159 @@
+/* .posts-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 20px;
+  }
+  
+  .post-card {
+    width: calc(33.33% - 20px);
+    background-color: #f0f0f0;
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+    border-radius: 8px;
+  }
+  
+  .post-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .post-title {
+    font-family: 'Lato', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .post-content {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    color: #555;
+  }
+  
+  .learn-more-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .learn-more-btn:hover {
+    background-color: #0056b3;
+  } */
+
+
+
+.post-card img {
+    max-width: 100%;
+    /* Ensure the image does not exceed the width of its container */
+    max-height: 200px;
+    /* Set a maximum height for the image */
+    object-fit: cover;
+    /* Ensure the image covers the specified dimensions */
+}
+
+.posts-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: auto;
+    max-width: 1200px;
+    text-size-adjust: 50px;
+    font-size: 30px;
+    padding: 20px;
+}
+
+
+.post-card {
+    width: calc(33% - 10px);
+    background-color: #f0f0f0;
+    padding: 20px;
+    margin-bottom: 10px;
+    margin-left: 0.5rem;
+    /* Adjust this value */
+    margin-right: 1rem;
+    /* Adjust this value */
+
+    transition: transform 0.3s ease;
+    border-radius: 8px;
+
+}
+
+
+.post-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    pointer: cursor;
+}
+
+.post-title {
+    font-family: 'Lato', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.post-content {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    color: #555;
+}
+
+.learn-more-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.learn-more-btn:hover {
+    background-color: #0056b3;
+}
+
+
+
+/* Add this to your Posts.css file */
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 3px;
+  text-align: center;
+  max-width: 80%; /* Adjust the maximum width as needed */
+  max-height: 80%; /* Adjust the maximum height as needed */
+  overflow: auto; 
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
